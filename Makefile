@@ -1,8 +1,6 @@
-main:main.o kmp.o
-	gcc -Wall -o main main.o kmp.o
-kmp.o:
-	gcc -c kmp.c
+main:main.o mergesort.o
+	gcc -Wall -o main main.o mergesort.o
 main.o:
-	gcc -c main.c		
-clean:
-	rm *.o main
+	gcc -c main.c
+mergesort.o:
+	gcc -c mergesort.c
