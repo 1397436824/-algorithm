@@ -1,8 +1,8 @@
-binarysearch_test:binarysearch.o binarysearch_test.o
-	gcc -Wall -o binarysearch_test binarysearch.o binarysearch_test.o
-binarysearch.o:
-	gcc -c binarysearch.c
-binarysearch_test.o:
-	gcc -c binarysearch_test.c 
+main:main.o kmp.o
+	gcc -Wall -o main main.o kmp.o
+kmp.o:
+	gcc -c kmp.c
+main.o:
+	gcc -c main.c		
 clean:
-	rm *.o
+	rm *.o main
