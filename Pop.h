@@ -1,5 +1,5 @@
-#ifndef _QUICKSORT_H_
-#define _QUICKSORT_H_
+#ifndef _POPSORT_H_
+#define _POPSORT_H_
 
 #define ERROR -1 
 
