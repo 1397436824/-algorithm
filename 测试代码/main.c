@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "Pop.h" 
+#include "SelectionSort.h" 
 
 
 int main(int argc, char *argv[]) {
@@ -9,7 +9,7 @@ int main(int argc, char *argv[]) {
 	printf("排序前:");
 	for(i=0;i<sizeof(seq)/sizeof(seq[0]);i++)
 		printf("%d\t",seq[i]);
-	PopSort(seq,sizeof(seq)/sizeof(seq[0]));
+	SelectionSort(seq,sizeof(seq)/sizeof(seq[0]));
 	printf("\n排序后:");
 	for(i=0;i<sizeof(seq)/sizeof(seq[0]);i++)
 	printf("%d\t",seq[i]);
