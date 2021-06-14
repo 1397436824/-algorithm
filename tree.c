@@ -38,8 +38,23 @@ void bianli_zhongxu(struct tree_node *tree)
 	{
 		printf("%c\n",tree->data);
 		if(!tree -> left) printf("left is null\n");
-		bianli_zhongxu(tree -> left);
+			bianli_zhongxu(tree -> left);
 		if(!tree -> right) printf("right is null\n");
-		bianli_zhongxu(tree -> right);
+			bianli_zhongxu(tree -> right);
 	}
 }
+
+
+
+
+int explore_deep(struct tree_node *tree)
+{
+	int left_deep=0,right_deep=0;
+	if(!tree) return 0;
+	left_deep=explore_deep(tree->left);
+	right_deep=explore_deep(tree->right);
+	return left_deep > right_deep ? left_deep+1:right_deep+1;
+}
+
+
+

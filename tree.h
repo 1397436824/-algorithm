@@ -23,4 +23,8 @@ void tree_init(struct tree_node **tree);
 struct tree_node * build_enough(int i);
 
 void bianli_zhongxu(struct tree_node *tree);
+int explore_deep(struct tree_node *tree);
+
 #endif
+
+
